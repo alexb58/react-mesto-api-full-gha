@@ -100,8 +100,11 @@ class Api {
 }
 
 const api = new Api({
-    baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-74',
-    authorization: '3b79a02e-a358-4496-9475-d28fd1117162'
+    baseUrl: 'https://api.mestopenza.nomoredomainsmonster.ru',
+    headers: {
+        "Content-Type": "application/json",
+    },
+    credentials: 'include',
 });
 
 export default api;
