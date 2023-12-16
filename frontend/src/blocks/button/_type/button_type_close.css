@@ -1,0 +1,35 @@
+.button_type_close {
+    background-image: url(../../../resources/images/CloseIcon.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: -8px;
+    right: -240px;
+}
+
+.button_type_close:hover {
+    opacity: 0.6;
+}
+
+.button_type_close-photo {
+    position: relative;
+    align-self: flex-end;
+    right: -40px;
+}
+
+@media screen and (max-width: 767px) {
+    .button_type_close {
+        top: -17px;
+        right: -131px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .button_type_close-photo {
+        top: -10px;
+        right: -25px;
+    }
+}

@@ -1,0 +1,6 @@
+.element__button {
+    cursor: pointer;
+    background-image: url(../../../resources/images/LikeButton.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
