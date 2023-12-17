@@ -9,8 +9,8 @@
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 158.160.126.133
 
-Frontend https://...
+Frontend https://mesto.penza.nomoredomainsmonster.ru
 
-Backend https://...
+Backend https://api.mestopenza.nomoredomainsmonster.ru
