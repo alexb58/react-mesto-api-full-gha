@@ -119,11 +119,7 @@ const updateUserData = (req, res, next, updateOptions) => {
         next(new BadRequestError(`Некорректные данные: ${errorMessage}`));
         return;
       }
-      if (err instanceof CastError) {
-        next(new BadRequestError('Некорректный Id пользователя'));
-      } else {
         next(err);
-      }
     });
 };
 

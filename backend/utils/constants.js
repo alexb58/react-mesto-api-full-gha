@@ -10,7 +10,7 @@ const {
   HTTP_STATUS_INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR_500,
 } = httpConstants;
 
-const regEx = /https?:\/\/w{0,3}\.?[\w0-9-]{1,10}\.\w{2,3}[\w\d\-._~:/?#[\]@!$&'()*+,;=]{0,}/m;
+const urlRegexPattern = /https?:\/\/w{0,3}\.?[\w0-9-]{1,10}\.\w{2,3}[\w\d\-._~:/?#[\]@!$&'()*+,;=]{0,}/m;
 
 module.exports = {
   CREATED_201,
@@ -20,5 +20,5 @@ module.exports = {
   NOT_FOUND_404,
   INTERNAL_SERVER_ERROR_500,
   CONFLICT_409,
-  regEx,
+  urlRegexPattern,
 };

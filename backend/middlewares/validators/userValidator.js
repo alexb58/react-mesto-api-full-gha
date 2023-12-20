@@ -1,5 +1,5 @@
 const { celebrate, Joi } = require('celebrate');
-const { regEx } = require('../../utils/constants');
+const { urlRegexPattern } = require('../../utils/constants');
 
 const createUserValidator = celebrate({
   body: Joi.object().keys({
@@ -7,7 +7,7 @@ const createUserValidator = celebrate({
     password: Joi.string().required().min(8),
     name: Joi.string().min(2).max(30),
     about: Joi.string().min(2).max(30),
-    avatar: Joi.string().regex(regEx),
+    avatar: Joi.string().urlRegexPattern(urlRegexPattern),
   }),
 });
 
@@ -34,7 +34,7 @@ const userDataValidator = celebrate({
 
 const userAvatarValidator = celebrate({
   body: Joi.object().keys({
-    avatar: Joi.string().required().regex(regEx),
+    avatar: Joi.string().required().urlRegexPattern(urlRegexPattern),
   }),
 });
 
